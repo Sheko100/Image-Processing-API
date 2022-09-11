@@ -1,0 +1,33 @@
+{
+  "name": "image-processing-api",
+  "version": "1.0.0",
+  "description": "Resizing images",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "prettier --config .prettierrc \"src/**/**.js\" --write",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
+  },
+  "author": "Shaker Sharabi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.3.0",
+    "@types/node": "^18.7.16",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "jasmine": "^4.4.0",
+    "jasmine-spec-reporter": "^7.0.0"
+  }
+}
