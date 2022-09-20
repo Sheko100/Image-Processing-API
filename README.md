@@ -1,2 +1,2 @@
 # Image-Processing-API
-API for image editing
+API for resizing images
