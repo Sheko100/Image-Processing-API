@@ -1,7 +1,7 @@
 import express from "express";
 import resizeImage from "../../utilities/resizeImage";
 import path from "path";
-// TODO: run the lint then commit the code
+
 const route = express.Router();
 
 route.get("/", async (req, res) => {
