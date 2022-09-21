@@ -4,7 +4,7 @@ import path from "path";
 
 const route = express.Router();
 
-route.get("/", async (req, res) => {
+route.get("/", async (req: Record<string, any>, res: Record<string, any>): Promise<void>  => {
   const imageName = req.query.file_name as string;
   const width = parseInt(req.query.width as string);
   const height = parseInt(req.query.height as string);

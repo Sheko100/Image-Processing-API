@@ -3,7 +3,7 @@ import route from "./api/images";
 
 const routes = express.Router();
 
-routes.get("/", (req, res) => {
+routes.get("/", (req: Record<string, any>, res: Record<string, any>): void => {
   res.send("API endpoint");
 });
 
