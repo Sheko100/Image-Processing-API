@@ -14,7 +14,7 @@ const resizeImage = async (
   height: number,
   outputImage: string
 ): Promise<void> => {
-  const inputImage = `src/assets/full/${imageName}.jpg`;
+  const inputImage = `./assets/full/${imageName}.jpg`;
 
   await sharp(inputImage).resize(width, height).toFile(outputImage);
 };

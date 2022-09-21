@@ -8,7 +8,7 @@ route.get("/", async (req: Record<string, any>, res: Record<string, any>): Promi
   const imageName = req.query.file_name as string;
   const width = parseInt(req.query.width as string);
   const height = parseInt(req.query.height as string);
-  const outputImage = `src/assets/thumb/${imageName}.jpg`;
+  const outputImage = `./assets/thumb/${imageName}.jpg`;
   const imagePath = path.resolve(outputImage);
   let errMessage =
     "Error: there is an error during image processing. Please, refresh the page to try again";
