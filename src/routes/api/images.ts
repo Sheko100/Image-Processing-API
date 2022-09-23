@@ -13,7 +13,7 @@ route.get(
     let height = req.query.height as unknown as number;
     const isWidthWrong = isNaN(width) || width <= 0;
     const isHeightWrong = isNaN(height) || height <= 0;
-    const outputImage = `./assets/thumb/${imageName}.jpg`;
+    const outputImage = `./assets/thumb/${imageName}_${width}_${height}.jpg`;
     const imagePath = path.resolve(outputImage);
     let errMessage =
       "Error: there is an error during image processing. Please, refresh the page to try again";
