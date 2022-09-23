@@ -22,7 +22,7 @@ route.get(
       res.send("Please, assign only positive numbers to width and height");
     } else {
       width = parseInt(req.query.width as string);
-      height = parseInt(req.query.width as string);
+      height = parseInt(req.query.height as string);
 
       try {
         const metadata = await sharp(outputImage).metadata();
